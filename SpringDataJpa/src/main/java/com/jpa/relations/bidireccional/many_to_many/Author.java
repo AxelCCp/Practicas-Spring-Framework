@@ -1,20 +1,24 @@
-package com.jpa.relations.unidireccional.one_to_many;
+package com.jpa.relations.bidireccional.many_to_many;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name="uni_employee_one_to_many")
-@Table(name="uni_employee_one_to_many")
-public class Employee {
+@Entity(name="bi_author_many_to_many")
+@Table(name="bi_author_many_to_many")
+public class Author {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToMany(mappedBy = "authorList")
+    private List<Book> bookList;
 
 }

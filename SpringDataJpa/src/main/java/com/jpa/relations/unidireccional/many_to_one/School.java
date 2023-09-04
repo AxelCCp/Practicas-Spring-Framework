@@ -1,4 +1,4 @@
-package com.jpa.relations.unidireccional.one_to_many;
+package com.jpa.relations.unidireccional.many_to_one;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,13 +8,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name="uni_employee_one_to_many")
-@Table(name="uni_employee_one_to_many")
-public class Employee {
+@Entity(name="uni_school_many_to_one")
+@Table(name="uni_school_many_to_one")
+public class School {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
 
 }
