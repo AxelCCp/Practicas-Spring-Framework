@@ -26,6 +26,8 @@
 
 .\bin\windows\kafka-topics.bat --describe --topic example-topic --bootstrap-server localhost:9092
 
+.\bin\windows\kafka-topics.bat --describe --topic unProgramadorNace-Topic --bootstrap-server localhost:9092
+
 
 
 ▶️ Listar todos los topics que existen dentro del broker
@@ -33,13 +35,21 @@
 .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 
 
+
 ▶️ Inicia una consola para ver mensajes de un topic específico
+
 .\bin\windows\kafka-console-consumer.bat --topic {nombreTopic} --bootstrap-server {host}:9092
 
 .\bin\windows\kafka-console-consumer.bat --topic example-topic --bootstrap-server localhost:9092
 
+.\bin\windows\kafka-console-consumer.bat --topic unProgramadorNace-Topic --bootstrap-server localhost:9092
+
+
 
 ▶️ Inicia una consola para enviar mensajes a un topic específico
+
 .\bin\windows\kafka-console-producer.bat --broker-list {host}:9092 --topic {topic-name}
 
 .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic example-topic
+
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic unProgramadorNace-Topic
