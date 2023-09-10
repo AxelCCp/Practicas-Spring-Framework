@@ -46,4 +46,5 @@ public class EmailServiceImpl implements IEmailService{
 
     @Value("${email.sender}")
     private String emailUser;
+
 }

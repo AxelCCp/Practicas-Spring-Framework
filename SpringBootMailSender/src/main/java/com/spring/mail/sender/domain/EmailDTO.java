@@ -18,7 +18,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class EmailDTO{
-    private String[]User;
+    private String[]user;
     private String subject;
     private String message;
 }
