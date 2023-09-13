@@ -1,0 +1,45 @@
+
+# ----query - solo sirve para hacer consultas----
+type Query {
+    #student-------------------------------------
+    findStudentById(studentId: String) : Student,
+    findAllStudents : [Student]
+
+    #course--------------------------------------
+    findCourseById(courseId : String) : Course,
+    findAllCourses : [Course]
+}
+
+#----------- para crear registros ---------------
+type Mutation {
+    createStudent(inputStudent : InputStudent) : Student
+    deleteStudentById(studentId : String) : String
+}
+
+#----------- define el tipo de dato -------------
+type Student {
+    id: ID,
+    name : String,
+    lastname : String,
+    age : Int
+}
+
+type Course {
+    id : ID,
+    name : String,
+    category : String,
+    teacher : String
+}
+
+
+input InputStudent {
+    id: ID,
+    name : String,
+    lastname : String,
+    age : Int,
+    courseId : String!                     # " ! " : le decimos q es un campo obligatorio.
+}
+
+
+
+
