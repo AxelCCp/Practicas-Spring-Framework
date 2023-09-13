@@ -4,5 +4,5 @@ INSERT INTO courses (name, category, teacher) VALUES ('Programacion', 'Tecnologi
 
 INSERT INTO students (name, lastname, age, course_id) VALUES ('John', 'Serna', '26', 1);
 INSERT INTO students (name, lastname, age, course_id) VALUES ('Andrea', 'Calle', '21', 2);
-INSERT INTO students (name, lastname, age, course_id) VALUES ('Anyi', 'Hoyos', '22', 1);
-INSERT INTO students (name, lastname, age, course_id) VALUES ('Santiago', 'Perez', '24', 3);
+INSERT INTO students (name, lastname, age, course_id) VALUES ('Anyi', 'Hoyos', '22', 3);
+INSERT INTO students (name, lastname, age, course_id) VALUES ('Santiago', 'Perez', '24', 1);

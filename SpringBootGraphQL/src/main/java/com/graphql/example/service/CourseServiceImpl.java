@@ -25,7 +25,7 @@ public class CourseServiceImpl implements ICourseService{
 
     @Override
     @Transactional
-    public void createStudent(Course course) {
+    public void createCourse(Course course) {
         courseDao.save(course);
     }
 
